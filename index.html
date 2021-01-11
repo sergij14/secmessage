@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="ico.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script defer type="module" src="index.js"></script>
+  <title>secMessage</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="pad-tb">
+      <h1 class="title">
+        <a href="/">
+          <img src="icon.svg" onerror="this.onerror=null; this.src='ico.png'">
+          secMessage</a>
+      </h1>
+    </header>
+
+    <main>
+      <div class="columns">
+        <div class="column">
+
+          <div id="message-show" class="hide">
+            <a href="./index.html">Create your own secret message</a>
+          </div>
+
+          <div id="message-form">
+            <form>
+              <label class="label  mar-b">Enter a Secret Message</label>
+              <input class="input" id="message-input" autocomplete="off" />
+              <button class="btn mar-tb">Create</button>
+            </form>
+          </div>
+
+
+          <div id="link-form" class="hide">
+            <div>
+              <p>Share the link with friends</p>
+              <input class="input mar-tb" id="link-input" autocomplete="off" />
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="pad-tb">
+      <p class="pad-tb">
+        &copy; 2021, secMessage. By <a target="_blank" href="https://sergij14.netlify.app/">sergij14</a>.
+      </p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
