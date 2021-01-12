@@ -27,7 +27,7 @@ html {
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: var(--color-primary);
   line-height: 1.5;
   background: var(--color-tertiary);
