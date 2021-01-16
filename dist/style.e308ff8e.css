@@ -1,0 +1,218 @@
+/*
+
+Author: Sergi. J
+Date: Jan, 2020
+
+*/
+
+/* Variables */
+:root {
+  --color-primary: #ffd369;
+  --color-secondary: #393e46;
+  --color-tertiary: #222831;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--color-primary);
+  line-height: 1.5;
+  background: var(--color-tertiary);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:link,
+a:active,
+a:visited,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:active,
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+
+header {
+  background: var(--color-secondary);
+  text-align: center;
+}
+
+header .title {
+  font-size: 3rem;
+}
+
+header .title img {
+  width: 5rem;
+  display: flex;
+  margin: 0.2em auto;
+  filter: invert(76%) sepia(43%) saturate(471%) hue-rotate(358deg)
+    brightness(101%) contrast(105%);
+}
+
+header .title a:hover {
+  text-decoration: none;
+}
+
+header .title:hover {
+  opacity: 0.7;
+}
+
+/* Container */
+
+.container {
+  padding: 0 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sec-message {
+  padding: 1.5em;
+  border: 2px var(--color-primary) dashed;
+  margin-bottom: 1em;
+}
+
+.sec-message::before {
+  content: open-quote;
+}
+.sec-message::after {
+  content: close-quote;
+}
+
+/* Inputs */
+
+.label {
+  font-size: 2rem;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background: #e6e6e6;
+  color: var(--color-tertiary);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.8em 1em;
+  border-radius: 0.7rem;
+}
+
+.input:focus {
+  outline: none;
+  background: #ffffff;
+}
+
+.btn {
+  border: none;
+  background: #e6e6e6;
+  color: var(--color-tertiary);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.8em 1em;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  background: #ffffff;
+}
+
+/* Footer */
+footer {
+  border-top: 1px var(--color-secondary) dashed;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  background: var(--color-secondary);
+}
+
+/* Utility Classes */
+
+.hide {
+  display: none;
+}
+
+.pad-tb {
+  padding: 1em 0;
+}
+
+.mar-b {
+  margin-bottom: 1em;
+}
+
+.mar-t {
+  margin-top: 1.5em;
+}
+
+.mar-tb {
+  margin: 1em 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 990px) {
+  .column {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

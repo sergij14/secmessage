@@ -1,4 +1,6 @@
-"use strict";
+import "core-js/stable";
+
+("use strict");
 
 const { hash } = window.location;
 const message = atob(hash.replace("#", ""));
